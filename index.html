@@ -209,3 +209,4 @@ const s=ac.createBufferSource();s.buffer=b;s.loop=true;const f=ac.createBiquadFi
 $("#vol").oninput=e=>{const v=e.target.value/100;if(!ac){if(!v)return;initAudio()}ac.resume();gn.gain.setTargetAtTime(v*v*.9,ac.currentTime,.15)};
 render();
 </script></body></html>
+
