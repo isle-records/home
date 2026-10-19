@@ -1,15 +1,16 @@
-ISLE RECORDS — ISLE CLUB replacement
+ISLE RECORDS Music Isle — Road, Coast & People Update
 
-This package preserves the existing single-file ISLE RECORDS website and replaces only the prior circular club block with a coastal venue complex inspired by the supplied reference.
+Upload index.html and the complete assets/ folder to your existing site root.
+The island uses Three.js from a CDN and requires internet access and WebGL.
+Audio files included: isle-ocean.mp3, isle-wind.mp3, tomahawk-track.mp3.
 
-Files:
-- index.html — complete website with 3D ISLE CLUB replacement
-- assets/audio/isle-ocean.mp3 — ocean/beach ambience
-- assets/audio/isle-wind.mp3 — waves/birds/wind ambience
-- assets/audio/tomahawk-track.mp3 — supplied TOMAHAWK track
+Updated: textured stone-paver road mesh with UVs, junction gap patches, more turquoise shallow-water band, ocean plane beyond the camera far clipping distance, release-pier walking route with deck-aware foot height, soft avoidance around house/tree footprints, solid roof gables and extra house/lighthouse architectural detail.
 
-Deploy all files together at the same website root. Keep asset paths unchanged. The 3D engine loads from a small fallback list of Three.js CDNs, so internet access to at least one configured CDN is required. Audio starts only after the visitor explicitly enables it.
+Syntax tests passed; full WebGL visual test not run in this environment.
 
-Checks run: HTML parser, inline JavaScript syntax (Node.js), club-block static checks, audio-path and file presence checks, package ZIP integrity, and byte-for-byte comparison between packaged index.html and the standalone HTML.
+INTERACTION FIX UPDATE
+- Simplified the central garden walkway into a gentle S-curve.
+- Added warm, night-only emissive lighthouse windows and lantern glass.
+- Added a close (×) control to every clicked-location information panel; Escape and background-click closing remain supported.
 
-Not run: a true WebGL render/screenshot or FPS benchmark. In this environment the configured external CDN host could not be resolved, so browser rendering could not be verified here.
+Deployment: upload index.html and the entire assets folder together. The 3D engine still loads from public CDN sources and requires internet access.
